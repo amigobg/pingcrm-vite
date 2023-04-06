@@ -19,7 +19,7 @@
 [Windi CSS]: https://windicss.org/
 
 Unlike the [original demo], this replaces [webpacker] with [Vite Rails],
-which provides a substantially faster development experience.
+which provides a substantially faster development experience and use SQLite3 for testing and development instead of pg.
 
 It also leverages [<kbd>js_from_routes</kbd>][js_from_routes] to auto-generate API methods to effortlessly integrate with the Rails backend, which works nicely in combination with <kbd>[vite-plugin-full-reload]</kbd>
 
@@ -59,11 +59,17 @@ Start it:
 foreman start
 ```
 
-You're ready to go! Visit PingCRM in your browser (http://localhost:3000), and login with:
+You're ready to go! Visit PingCRM in your browser (http://localhost:3000) not (http://127.0.0.1:3000
+), and login with:
 
 - **Username:** johndoe@example.com
 - **Password:** secret
 
+If user doesn't work you can load the db seeds:
+
+```
+rake db:seeds
+```
 
 ## Running tests
 
@@ -78,7 +84,6 @@ rails test:system
 
 - Ruby 3.1
 - Ruby on Rails 7
-- PostgreSQL
 
 
 ## Credits
