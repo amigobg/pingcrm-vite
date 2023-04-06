@@ -43,7 +43,7 @@ Visit [the live demo](https://pingcrm-vite.herokuapp.com/). Login with:
 Clone the repo locally:
 
 ```
-git clone https://github.com/ElMassimo/pingcrm-vite.git
+git clone https://github.com/amigobg/pingcrm-vite.git
 ```
 
 Setup (install dependencies, create and seed database):
